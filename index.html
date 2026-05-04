@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ SPOS Software Suite</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="scripts/auth.js"></script>
+    <script>Auth.guardPage();</script>
+    <style>
+        body {
+            background: #316699;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .desktop {
+            flex-grow: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100px);
+            grid-template-rows: repeat(auto-fill, 120px);
+            gap: 20px;
+            align-content: start;
+        }
+
+        .shortcut {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .shortcut:hover {
+            background: rgba(255,255,255,0.1);
+            outline: 1px dotted white;
+        }
+
+        .shortcut img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 8px;
+        }
+
+        .shortcut span {
+            font-size: 12px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .taskbar {
+            height: 40px;
+            background: #d4e6ff;
+            border-top: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .start-btn {
+            background: #316699;
+            color: white;
+            font-weight: bold;
+            padding: 2px 10px;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <a href="pos/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/cash-register--v1.png" alt="POS">
+            <span>POS Terminal</span>
+        </a>
+        <a href="back-office/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/office--v1.png" alt="Back Office">
+            <span>Back Office</span>
+        </a>
+        <a href="account/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/bank--v1.png" alt="Account">
+            <span>Accounting</span>
+        </a>
+        <a href="barcode/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/barcode-scanner--v1.png" alt="Barcode">
+            <span>Barcode Printing</span>
+        </a>
+        <a href="backup/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/database--v1.png" alt="Backup">
+            <span>Database Utility</span>
+        </a>
+        <a href="users/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/group.png" alt="Users">
+            <span>User Management</span>
+        </a>
+        <a href="License/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/key.png" alt="Licenses">
+            <span>Licenses</span>
+        </a>
+        <a href="price-code-changer/index.html" class="shortcut">
+            <img src="https://img.icons8.com/isometric/100/pricing.png" alt="Price Changer">
+            <span>Price Changer</span>
+        </a>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-btn">
+             🚀 Start
+        </div>
+        <div style="margin-left: auto; font-size: 14px; font-weight: bold; color: #1e3a8a;">
+            @ SPOS System 2026
+        </div>
+    </div>
+</body>
+</html>
